@@ -1,10 +1,14 @@
 # list-of-installable-web-apps
-- https://m.flipkart.com/
-- https://www.oumy.com/
-- https://twitter.com/
+
 - https://airhorner.com/
-- https://dev.opera.com/
 - https://andreasbovens.github.io/inbox-attack/
-- https://wiki-offline.jakearchibald.com/
-- https://aerotwist.com/blog/guitar-tuner/
+- https://busrouter.sg/
+- https://dev.opera.com/
+- https://guitar-tuner.appspot.com/
+- https://jakearchibald.github.io/trained-to-thrill/
+- https://m.flipkart.com/
+- https://twitter.com/
 - https://voice-memos.appspot.com/
+- https://wiki-offline.jakearchibald.com/
+- https://www.oumy.com/
+- https://www.pokedex.org/
