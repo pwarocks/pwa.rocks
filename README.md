@@ -1,1 +1,10 @@
 # list-of-installable-web-apps
+- https://m.flipkart.com/
+- https://www.oumy.com/
+- https://twitter.com/
+- https://airhorner.com/
+- https://dev.opera.com/
+- https://andreasbovens.github.io/inbox-attack/
+- https://wiki-offline.jakearchibald.com/
+- https://aerotwist.com/blog/guitar-tuner/
+- https://voice-memos.appspot.com/
