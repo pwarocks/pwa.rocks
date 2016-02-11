@@ -12,3 +12,4 @@
 - https://wiki-offline.jakearchibald.com/
 - https://www.oumy.com/
 - https://www.pokedex.org/
+- https://flipboard.com/
