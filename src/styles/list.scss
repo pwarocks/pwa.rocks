@@ -20,9 +20,12 @@
 
 		position:relative;
 		overflow:hidden;
+		display:block;
+		padding:0 8px 62.5% 8px;
 		height:0;
-		padding-bottom:62.5%;
 		break-inside:avoid;
+		color:currentColor;
+		text-decoration:none;
 
 		// Red
 
@@ -72,19 +75,6 @@
 
 	&__title {
 
-		}
-
-	// Link
-
-	&__link {
-		position:absolute;
-		top:0;
-		right:0;
-		bottom:0;
-		left:0;
-		color:currentColor;
-		padding:4px 8px;
-		text-decoration:none;
 		}
 
 	// Description
