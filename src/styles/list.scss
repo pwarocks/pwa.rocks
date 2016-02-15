@@ -1,0 +1,107 @@
+// ------------------------------------------------------------------
+// List
+// ------------------------------------------------------------------
+
+.list {
+
+	column-count:1;
+	column-gap:0;
+
+	@include mq($from:palm) {
+		column-count:2;
+		}
+	@include mq($from:lap) {
+		column-count:3;
+		}
+
+	// Item
+
+	&__item {
+
+		position:relative;
+		overflow:hidden;
+		height:0;
+		padding-bottom:62.5%;
+		break-inside:avoid;
+
+		// Red
+
+		&--air-horner {
+			background:#1194F6 url(../images/air-horner.png) 0 / cover;
+			}
+		&--bus-router {
+			background:#FFF url(../images/bus-router.png) 0 / cover;
+			}
+		&--dev-opera {
+			background:#FFF url(../images/dev-opera.png) 0 / cover;
+			}
+		&--flipboard {
+			background:#CD0000 url(../images/flipboard.png) 0 / cover;
+			}
+		&--flipkart {
+			background:#2796D7 url(../images/flipkart.png) 0 / cover;
+			}
+		&--guitar-tuner {
+			background:#A2B1B8 url(../images/guitar-tuner.png) 0 / cover;
+			}
+		&--inbox-attack {
+			background:#CBDEA8 url(../images/inbox-attack.png) 0 / cover;
+			}
+		&--oumy {
+			background:#FFF url(../images/oumy.png) 0 / cover;
+			}
+		&--pokedex {
+			background:#78C850 url(../images/pokedex.png) 0 / cover;
+			}
+		&--trained-thrill {
+			background:#DA50A8 url(../images/trained-thrill.png) 0 / cover;
+			}
+		&--twitter {
+			background:#059FF5 url(../images/twitter.png) 0 / cover;
+			}
+		&--voice-memos {
+			background:#673AB7 url(../images/voice-memos.png) 0 / cover;
+			}
+		&--wiki-offline {
+			background:#EFF0ED url(../images/wiki-offline.png) 0 / cover;
+			}
+
+		}
+
+	// Title
+
+	&__title {
+
+		}
+
+	// Link
+
+	&__link {
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		color:currentColor;
+		padding:4px 8px;
+		text-decoration:none;
+		}
+
+	// Description
+
+	&__description {
+		position:absolute;
+		right:0;
+		bottom:-50%;
+		left:0;
+		padding:4px 8px;
+		background:rgba(0, 0, 0, 0.5);
+		color:#FFF;
+		transition:bottom 0.2s ease-out;
+		}
+	&__item:hover &__description,
+	&__item:focus &__description {
+		bottom:0;
+		}
+
+	}

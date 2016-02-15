@@ -1,0 +1,19 @@
+// Page
+
+.page {
+
+	margin:auto;
+	max-width:1024px;
+
+	background:#282828;
+	font:16px/1.6 Helvetica, sans-serif;
+
+	// Title
+
+	&__title {
+		padding:20px;
+		text-align:center;
+		color:#FFF;
+		}
+
+	}
