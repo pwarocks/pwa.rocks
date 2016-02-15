@@ -13,3 +13,4 @@
 - https://www.oumy.com/
 - https://www.pokedex.org/
 - https://flipboard.com/
+- https://2048-opera-pwa.surge.sh
