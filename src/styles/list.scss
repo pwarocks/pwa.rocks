@@ -14,17 +14,33 @@
 		column-count:3;
 		}
 
+	// Title
+
+	&__title {
+		position:absolute;
+		right:0;
+		bottom:0;
+		left:0;
+		background:rgba(56, 56, 56, 0.5);
+		color:#FFF;
+		text-align:center;
+		font-size:25px;
+		line-height:37px;
+		vertical-align:middle;
+		height:0;
+		overflow:hidden;
+		transition:height 0.2s linear;
+		}
+
 	// Item
 
 	&__item {
 
 		position:relative;
-		overflow:hidden;
 		display:block;
-		padding:0 8px 62.5% 8px;
+		padding-bottom:62.5%;
 		height:0;
 		break-inside:avoid;
-		color:currentColor;
 		text-decoration:none;
 
 		// Red
@@ -84,24 +100,14 @@
 
 		}
 
-	// Title
+	// Action
 
-	&__title {
-		position:absolute;
-		right:0;
-		bottom:-50%;
-		left:0;
-		padding:7px 12px 10px;
-		background:rgba(0, 0, 0, 0.5);
-		color:#FFF;
-		text-align:center;
-		font-size:25px;
-		line-height:1;
-		transition:bottom 0.2s ease-out;
+	&__item:focus {
+		outline:none;
 		}
 	&__item:hover &__title,
 	&__item:focus &__title {
-		bottom:0;
+		height:40px;
 		}
 
 	}
