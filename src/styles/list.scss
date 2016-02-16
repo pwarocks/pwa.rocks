@@ -90,7 +90,8 @@
 		padding:7px 12px 10px;
 		background:rgba(0, 0, 0, 0.5);
 		color:#FFF;
-		font:25px/1 Permanent Marker, sans-serif;
+		font-size:25px;
+		line-height:1;
 		transition:bottom 0.2s ease-out;
 		}
 	&__item:hover &__title,

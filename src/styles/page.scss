@@ -6,14 +6,15 @@
 	max-width:1024px;
 
 	background:#282828;
-	font:16px/1.6 Helvetica, sans-serif;
+	font-family:Permanent Marker, sans-serif;
 
 	// Title
 
 	&__title {
 		padding:30px 0 38px;
 		text-align:center;
-		font:50px/1 Permanent Marker, sans-serif;
+		font-size:50px;
+		line-height:1;
 		background:#383838;
 		color:#FFF;
 		}
