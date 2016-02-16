@@ -54,6 +54,7 @@
 			background:#F3FAFD url(../images/oumy.svg) 50% 50% / 45% auto no-repeat;
 			}
 		&--pokedex {
+			image-rendering:pixelated;
 			background:
 				url(../images/pokedex.png) 50% 50% / 50% auto no-repeat,
 				linear-gradient(to right, #78C850 50%, #A040A0 50%)
