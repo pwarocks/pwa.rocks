@@ -1,4 +1,4 @@
-# List of Installable Web Apps
+# List of Progressive Web Apps [![Build status](https://travis-ci.org/operasoftware/pwa-list.svg)](https://travis-ci.org/operasoftware/pwa-list)
 
 - [Air Horner](https://airhorner.com/)
 - [Bus Router](https://busrouter.sg/)

@@ -1,9 +1,12 @@
 {
   "private": true,
   "scripts": {
+    "test": "gulp build",
+    "build": "gulp build",
     "server": "gulp"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@alrra/travis-scripts": "^2.0.0",
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",

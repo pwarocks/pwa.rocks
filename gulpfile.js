@@ -51,10 +51,14 @@ gulp.task('watch', function () {
 	gulp.watch('src/assets/**', ['copy']);
 });
 
-gulp.task('default', [
+gulp.task('build', [
 	'styles',
 	'html',
-	'copy',
+	'copy'
+]);
+
+gulp.task('default', [
+	'build',
 	'server',
 	'watch'
 ]);
