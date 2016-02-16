@@ -30,43 +30,52 @@
 		// Red
 
 		&--air-horner {
-			background:#1194F6 url(../images/air-horner.png) 0 / cover;
+			background:#1194F6 url(../images/air-horner.svg) 50% 50% / 50% auto no-repeat;
 			}
 		&--bus-router {
-			background:#FFF url(../images/bus-router.png) 0 / cover;
+			background:#B4D1FF url(../images/bus-router.svg) 50% 50% / 48% auto no-repeat;
 			}
 		&--dev-opera {
-			background:#FFF url(../images/dev-opera.png) 0 / cover;
+			background:#FFF url(../images/dev-opera.svg) 50% 50% / 45% auto no-repeat;
 			}
 		&--flipboard {
-			background:#CD0000 url(../images/flipboard.png) 0 / cover;
+			background:#CD0000 url(../images/flipboard.svg) 50% 50% / 38% auto no-repeat;
 			}
 		&--flipkart {
-			background:#2796D7 url(../images/flipkart.png) 0 / cover;
+			background:#007AD8 url(../images/flipkart.svg) 50% 50% / 38% auto no-repeat;
 			}
 		&--guitar-tuner {
-			background:#A2B1B8 url(../images/guitar-tuner.png) 0 / cover;
+			background:#36474F url(../images/guitar-tuner.svg) 50% 50% / 50% auto no-repeat;
 			}
 		&--inbox-attack {
-			background:#CBDEA8 url(../images/inbox-attack.png) 0 / cover;
+			background:#CBDEA8 url(../images/inbox-attack.svg) 50% 50% / 55% auto no-repeat;
 			}
 		&--oumy {
-			background:#FFF url(../images/oumy.png) 0 / cover;
+			background:#F3FAFD url(../images/oumy.svg) 50% 50% / 45% auto no-repeat;
 			}
 		&--pokedex {
-			background:#78C850 url(../images/pokedex.png) 0 / cover;
+			background:
+				url(../images/pokedex.png) 50% 50% / 50% auto no-repeat,
+				linear-gradient(to right, #78C850 50%, #A040A0 50%)
+				#78C850;
 			}
 		&--trained-thrill {
-			background:#DA50A8 url(../images/trained-thrill.png) 0 / cover;
+			background:#DA50A8 url(../images/trained-thrill.svg) 50% 50% / 55% auto no-repeat;
 			}
 		&--twitter {
-			background:#059FF5 url(../images/twitter.png) 0 / cover;
+			background:#059FF5 url(../images/twitter.svg) 50% 50% / 45% auto no-repeat;
 			}
 		&--voice-memos {
-			background:#673AB7 url(../images/voice-memos.png) 0 / cover;
+			background:#673AB7 url(../images/voice-memos.svg) 50% 50% / auto 80% no-repeat;
 			}
 		&--wiki-offline {
-			background:#EFF0ED url(../images/wiki-offline.png) 0 / cover;
+			background:
+				url(../images/wiki-offline.svg) 50% 50% / 55% auto no-repeat,
+				linear-gradient(to bottom, #FEFFFC, #DFE1DE)
+				#EEF0ED;
+			}
+		&--2048-puzzle {
+			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
 			}
 
 		}
@@ -74,23 +83,18 @@
 	// Title
 
 	&__title {
-
-		}
-
-	// Description
-
-	&__description {
 		position:absolute;
 		right:0;
 		bottom:-50%;
 		left:0;
-		padding:4px 8px;
+		padding:7px 12px 10px;
 		background:rgba(0, 0, 0, 0.5);
 		color:#FFF;
+		font:25px/1 Permanent Marker, sans-serif;
 		transition:bottom 0.2s ease-out;
 		}
-	&__item:hover &__description,
-	&__item:focus &__description {
+	&__item:hover &__title,
+	&__item:focus &__title {
 		bottom:0;
 		}
 
