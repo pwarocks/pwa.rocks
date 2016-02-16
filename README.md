@@ -17,6 +17,6 @@
 
 ## Development
 
-- Clone repository locally `git clone git@github.com:operasoftware/list-of-installable-web-apps.git`
-- Install all dependencies `npm install`
+- Clone repository locally `git clone git@github.com:operasoftware/pwa-list.git`
+- Install all dependencies `cd pwa-list && npm install`
 - Start local server `npm run server`
