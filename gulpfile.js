@@ -32,7 +32,7 @@ gulp.task('copy', function () {
 	return gulp.src('src/assets/**')
 		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream({
-			once:true
+			once: true
 		}));
 });
 

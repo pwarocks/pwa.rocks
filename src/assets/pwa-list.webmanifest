@@ -4,12 +4,12 @@
 	"display": "fullscreen",
 	"icons": [
 		{
-			"src": "assets/images/icon.svg",
+			"src": "/pwa-list/images/icon.svg",
 			"sizes": "144x144",
 			"type": "image/svg"
 		},
 		{
-			"src": "assets/images/icon.svg",
+			"src": "/pwa-list/images/icon.svg",
 			"sizes": "196x196",
 			"type": "image/svg"
 		}
