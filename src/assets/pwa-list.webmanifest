@@ -4,22 +4,22 @@
 	"display": "standalone",
 	"icons": [
 		{
-			"src": "/pwa-list/assets/images/icon-144x144.png",
+			"src": "/pwa-list/images/icon-144x144.png",
 			"sizes": "144x144",
 			"type": "image/png"
 		},
 		{
-			"src": "/pwa-list/assets/images/icon-180x180.png",
+			"src": "/pwa-list/images/icon-180x180.png",
 			"sizes": "180x180",
 			"type": "image/png"
 		},
 		{
-			"src": "/pwa-list/assets/images/icon-192x192.png",
+			"src": "/pwa-list/images/icon-192x192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "/pwa-list/assets/images/icon.svg",
+			"src": "/pwa-list/images/icon.svg",
 			"sizes": "any",
 			"type": "image/svg"
 		}
