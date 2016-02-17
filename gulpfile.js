@@ -29,11 +29,9 @@ gulp.task('html', function () {
 });
 
 gulp.task('copy', function () {
-	return gulp.src('src/assets/**')
+	return gulp.src('src/assets/**', { dot: true })
 		.pipe(gulp.dest('dest'))
-		.pipe(sync.stream({
-			once: true
-		}));
+		.pipe(sync.stream({ once: true }));
 });
 
 gulp.task('server', function() {
