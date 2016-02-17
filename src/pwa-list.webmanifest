@@ -1,0 +1,20 @@
+{
+	"short_name": "PWA List",
+	"name": "Progressive Web Apps",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"src": "assets/images/icon.svg",
+			"sizes": "144x144",
+			"type": "image/svg"
+		},
+		{
+			"src": "assets/images/icon.svg",
+			"sizes": "196x196",
+			"type": "image/svg"
+		}
+	],
+	"start_url": "/pwa-list/",
+	"theme_color": "#5ac1f2",
+	"background_color": "#383838"
+}
