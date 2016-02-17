@@ -1,7 +1,7 @@
 {
 	"short_name": "PWA List",
 	"name": "Progressive Web Apps",
-	"display": "fullscreen",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "/pwa-list/images/icon.svg",
