@@ -20,3 +20,12 @@
 - Clone repository locally `git clone git@github.com:operasoftware/pwa-list.git`
 - Install all dependencies `cd pwa-list && npm install`
 - Start local server `npm run server`
+
+## Conditions for inclusion in this list
+
+Suggested sites should be nice looking progressive web apps. It should:
+- be served over HTTPS
+- have a web manifest with a nice looking icon
+- be responsive
+- function offline
+We welcome all submissions, but actual inclusion in the list is up to the discretion of the Opera Dev Relations team. If we find your web app not fitting (e.g. for content or other reasons), we won’t feature it.
