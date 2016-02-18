@@ -4,6 +4,11 @@
 	"display": "standalone",
 	"icons": [
 		{
+			"src": "/pwa-list/favicon.ico",
+			"sizes": "32x32 16x16",
+			"type": "image/vnd.microsoft.icon"
+		},
+		{
 			"src": "/pwa-list/images/icon-144x144.png",
 			"sizes": "144x144",
 			"type": "image/png"
