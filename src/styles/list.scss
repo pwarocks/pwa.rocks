@@ -11,7 +11,7 @@
 		column-count:2;
 		}
 	@include mq($from:lap) {
-		column-count:3;
+		column-count:4;
 		}
 
 	// Title
@@ -93,6 +93,9 @@
 			}
 		&--2048-puzzle {
 			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
+			}
+		&--get-kana {
+			background:#7C7171 url(../images/get-kana.svg) 50% 50% / 50% auto no-repeat;
 			}
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
