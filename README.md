@@ -28,7 +28,7 @@ What is progressive web app? See “[Progress Web Apps](https://developer.chrome
 Suggested sites should be nice looking progressive web apps. It should:
 
 - Be served over HTTPS
-- Have a [web manifest](https://www.w3.org/TR/appmanifest/) with a nice looking SVG icon
+- Have a [web manifest](https://www.w3.org/TR/appmanifest/) and a nice looking SVG icon
 - Be responsive
 - Function offline
 
