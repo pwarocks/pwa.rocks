@@ -16,6 +16,7 @@ What is progressive web app? See “[Progress Web Apps](https://developer.chrome
 - [Voice Memos](https://voice-memos.appspot.com/)
 - [Wiki Offline](https://wiki-offline.jakearchibald.com/)
 - [2048](https://2048-opera-pwa.surge.sh)
+- [Get Kana!](https://getkana.com/app)
 
 ## Development
 
