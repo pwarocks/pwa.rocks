@@ -11,7 +11,7 @@
 		column-count:2;
 		}
 	@include mq($from:lap) {
-		column-count:4;
+		column-count:3;
 		}
 
 	// Title
@@ -98,7 +98,7 @@
 			background:#7C7171 url(../images/get-kana.svg) 50% 50% / 50% auto no-repeat;
 			}
 		&--wave-pd1 {
-			background:#0e0e0e url(../images/wave-pd1.svg) 50% 50% / 50% auto no-repeat;
+			background:#191622 url(../images/wave-pd1.svg) 50% 50% / 48% auto no-repeat;
 			}
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
