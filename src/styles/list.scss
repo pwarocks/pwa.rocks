@@ -79,6 +79,9 @@
 				linear-gradient(to right, #78C850 50%, #A040A0 50%)
 				#78C850;
 			}
+		&--soundslice {
+			background:#FFF url(../images/soundslice.svg) 50% 50% / 45% auto no-repeat;
+			}
 		&--trained-thrill {
 			background:#DA50A8 url(../images/trained-thrill.svg) 50% 50% / 55% auto no-repeat;
 			}
