@@ -5,6 +5,7 @@ What is progressive web app? See “[Progress Web Apps](https://developer.chrome
 - [Air Horner](https://airhorner.com/)
 - [Bus Router](https://busrouter.sg/)
 - [Dev.Opera](https://dev.opera.com/)
+- [Emojoy](https://jakearchibald-gcm.appspot.com/)
 - [Flipboard](https://flipboard.com/)
 - [Flipkart](https://m.flipkart.com/)
 - [Guitar Tuner](https://guitar-tuner.appspot.com/)
