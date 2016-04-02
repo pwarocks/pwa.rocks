@@ -1,21 +1,21 @@
-var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer'),
-	cssmin = require('gulp-cleancss'),
-	beml = require('gulp-beml'),
-	htmlmin = require('gulp-htmlmin'),
-	sync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
+const beml = require('gulp-beml');
+const csso = require('gulp-csso');
+const gulp = require('gulp');
+const htmlmin = require('gulp-htmlmin');
+const sass = require('gulp-sass');
+const sync = require('browser-sync').create();
 
-gulp.task('styles', function () {
+gulp.task('styles', () => {
 	return gulp.src('src/styles/screen.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(cssmin())
+		.pipe(csso())
 		.pipe(gulp.dest('dest/styles'))
 		.pipe(sync.stream());
 });
 
-gulp.task('html', function () {
+gulp.task('html', () => {
 	return gulp.src('src/index.html')
 		.pipe(beml({
 			elemPrefix: '__',
@@ -28,13 +28,13 @@ gulp.task('html', function () {
 		.pipe(sync.stream());
 });
 
-gulp.task('copy', function () {
+gulp.task('copy', () => {
 	return gulp.src('src/assets/**', { dot: true })
 		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream({ once: true }));
 });
 
-gulp.task('server', function() {
+gulp.task('server', () => {
 	sync.init({
 		notify: false,
 		server: {
@@ -43,7 +43,7 @@ gulp.task('server', function() {
 	});
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
 	gulp.watch('src/styles/*.scss', ['styles']);
 	gulp.watch('src/index.html', ['html']);
 	gulp.watch('src/assets/**', ['copy']);
