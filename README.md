@@ -12,6 +12,7 @@ What is a progressive web app? See “[Progressive Web Apps](https://developer.c
 - [Inbox Attack](https://andreasbovens.github.io/inbox-attack/)
 - [Oumy](https://www.oumy.com/)
 - [Pokedex](https://www.pokedex.org/)
+- [Soundslice](https://www.soundslice.com/)
 - [Trained to Thrill](https://jakearchibald.github.io/trained-to-thrill/)
 - [Twitter](https://twitter.com/)
 - [Voice Memos](https://voice-memos.appspot.com/)
