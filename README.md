@@ -1,6 +1,6 @@
 # List of Progressive Web Apps [![Build status](https://travis-ci.org/operasoftware/pwa-list.svg)](https://travis-ci.org/operasoftware/pwa-list)
 
-What is progressive web app? See “[Progress Web Apps](https://developer.chrome.com/devsummit/sessions/progressiveapps)” talk by [Alex Russell](https://github.com/slightlyoff) and [Andreas Bovens](https://github.com/andreasbovens).
+What is a progressive web app? See “[Progressive Web Apps](https://developer.chrome.com/devsummit/sessions/progressiveapps)” talk by [Alex Russell](https://github.com/slightlyoff) and [Andreas Bovens](https://github.com/andreasbovens).
 
 - [Air Horner](https://airhorner.com/)
 - [Bus Router](https://busrouter.sg/)
