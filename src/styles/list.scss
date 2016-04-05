@@ -103,6 +103,13 @@
 		&--2048-puzzle {
 			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
 			}
+		&--svgomg {
+			background:
+				url(../images/svgomg.svg) 50% 50% / 50% auto no-repeat,
+				linear-gradient(45deg, #E6E6E6 25%, transparent 25%, transparent 75%, #E6E6E6 75%, #E6E6E6) 0 0 / 20px 20px,
+				linear-gradient(45deg, #E6E6E6 25%, transparent 25%, transparent 75%, #E6E6E6 75%, #E6E6E6) 10px 10px / 20px 20px,
+				#F2F2F2;
+			}
 		&--wave-pd1 {
 			background:#191622 url(../images/wave-pd1.svg) 50% 50% / auto 70% no-repeat;
 			}
