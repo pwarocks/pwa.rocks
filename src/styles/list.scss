@@ -140,6 +140,9 @@
 				content:'';
 				}
 			}
+		&--firefox {
+			background:#005DA5 url(../images/firefox.svg) 50% 60% / auto 75% no-repeat;
+			}
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
 			}
