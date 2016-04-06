@@ -119,6 +119,27 @@
 		&--babe {
 			background:#F90 url(../images/babe.svg) 50% 50% / auto 80% no-repeat;
 			}
+		&--session {
+			position:relative;
+			background:
+				url(../images/session.svg) 52% 50% / 70% auto no-repeat,
+				linear-gradient(#EB2, #DA1)
+				#DDAF49;
+			&::before {
+				position:absolute;
+				top:10px;
+				right:10px;
+				bottom:10px;
+				left:10px;
+				border:1px dashed #C93;
+				box-shadow:
+					10px 10px 0 #E5B219,
+					-10px 10px 0 #E5B219,
+					-10px -10px 0 #E5B219,
+					10px -10px 0 #E5B219;
+				content:'';
+				}
+			}
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
 			}
