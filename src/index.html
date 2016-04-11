@@ -10,6 +10,7 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" type="image/png" href="images/icon-228x228.png" sizes="228x228">
 	<link rel="apple-touch-icon" type="image/png" href="images/icon-228x228.png">
+	<link rel="canonical" href="https://pwa.rocks/">
 </head>
 <body block="page">
 	<header elem="header">
@@ -86,5 +87,10 @@
 	<footer elem="footer">
 		<p>Made by <a elem="link" href="https://twitter.com/ODevRel/lists/odevrel-team/members">Opera DevRel Team</a></p>
 	</footer>
+	<script>
+		if (location.hostname.endsWith('.github.io')) {
+			location.href = 'https://pwa.rocks/';
+		}
+	</script>
 </body>
 </html>
