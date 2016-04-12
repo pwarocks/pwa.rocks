@@ -44,7 +44,7 @@ gulp.task('server', () => {
 			baseDir: 'dest'
 		},
 		rewriteRules: [{
-			match: /(<script>(.*\n.*pwa\.rocks.*\n.*)+<\/script>)/gm,
+			match: /<script>.*\n.*pwa\.rocks.*\n.*<\/script>/gm,
 	        replace: ''
 		}]
 	});
