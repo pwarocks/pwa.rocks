@@ -45,9 +45,9 @@ gulp.task('server', () => {
 		},
 		rewriteRules: [{
 			match: /<link rel="canonical" href="https:\/\/pwa\.rocks\/">/g,
-	        fn: function (match) {
+			fn: function (match) {
 				return '';
-	        }
+			}
 		}]
 	});
 });
