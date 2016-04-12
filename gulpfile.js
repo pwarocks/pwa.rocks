@@ -42,7 +42,13 @@ gulp.task('server', () => {
 		notify: false,
 		server: {
 			baseDir: 'dest'
-		}
+		},
+		rewriteRules: [{
+			match: /<link rel="canonical" href="https:\/\/pwa\.rocks\/">/g,
+	        fn: function (match) {
+				return '';
+	        }
+		}]
 	});
 });
 
