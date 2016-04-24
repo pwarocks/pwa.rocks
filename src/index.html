@@ -101,6 +101,20 @@
 		<p>Made by the <a elem="link" href="https://twitter.com/ODevRel/lists/odevrel-team/members">Opera DevRel Team</a></p>
 	</footer>
 	<script>
+		// Shuffle function courtesy of Dudley Storey
+		// thenewcode.com/82/Recipes-for-Randomness-in-JavaScript
+		function shuffle(numPool) {
+			for (var j, x, i = numPool.length; i; j = parseInt(Math.random() * i), x = numPool[--i], numPool[i] = numPool[j], numPool[j] = x);
+			return numPool;
+		}
+		var items = document.querySelectorAll('.list__item:not([class$=suggest])');
+			items = Array.prototype.slice.call(items);
+			items = shuffle(items);
+		for (var i = 0, l = items.length; i < l; i++) {
+			items[i].style.order = '-' + (i + 1);
+		}
+	</script>
+	<script>
 		if (location.protocol != 'https:' || location.hostname != 'pwa.rocks') {
 			location.href = 'https://pwa.rocks/';
 		}
