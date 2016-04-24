@@ -45,11 +45,17 @@
 
 		// Red
 
+		&--2048-puzzle {
+			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
+			}
 		&--air-horner {
 			background:#1194F6 url(../images/air-horner.svg) 50% 50% / 46% auto no-repeat;
 			}
-		&--bus-router {
-			background:#B4D1FF url(../images/bus-router.svg) 50% 50% / 48% auto no-repeat;
+		&--babe {
+			background:#F90 url(../images/babe.svg) 50% 50% / auto 80% no-repeat;
+			}
+		&--currency-x {
+			background:#3D82F7 url(../images/currency-x.svg) 100% 100% / auto 82% no-repeat;
 			}
 		&--dev-opera {
 			background:#FFF url(../images/dev-opera.svg) 50% 50% / 45% auto no-repeat;
@@ -57,14 +63,17 @@
 		&--emojoy {
 			background:#E1BEE7 url(../images/emojoy.svg) 50% 50% / 45% auto no-repeat;
 			}
-		&--flipboard {
-			background:#CD0000 url(../images/flipboard.svg) 50% 50% / 38% auto no-repeat;
+		&--firefox {
+			background:#005DA5 url(../images/firefox.svg) 50% 60% / auto 75% no-repeat;
 			}
 		&--flipkart {
 			background:#007AD8 url(../images/flipkart.svg) 50% 50% / 38% auto no-repeat;
 			}
 		&--get-kana {
 			background:#7C7171 url(../images/get-kana.svg) 50% 50% / 50% auto no-repeat;
+			}
+		&--google-io {
+			background:#77909D url(../images/google-io.svg) 50% 50% / 50% auto no-repeat;
 			}
 		&--guitar-tuner {
 			background:#36474F url(../images/guitar-tuner.svg) 50% 50% / 46% auto no-repeat;
@@ -82,26 +91,17 @@
 				linear-gradient(to right, #78C850 50%, #A040A0 50%)
 				#78C850;
 			}
+		&--poly-mail {
+			background:#E8372D url(../images/poly-mail.svg) 50% 50% / 50% auto no-repeat;
+			}
+		&--qrcode {
+			background:#5F7D8C url(../images/qrcode.svg) 50% 50% / 40% auto no-repeat;
+			}
+		&--snapdrop {
+			background:#FAFAFA url(../images/snapdrop.svg) 50% 50% / 46% auto no-repeat;
+			}
 		&--soundslice {
 			background:#60506F url(../images/soundslice.svg) 50% 50% / 45% auto no-repeat;
-			}
-		&--trained-thrill {
-			background:#DA50A8 url(../images/trained-thrill.svg) 50% 50% / 55% auto no-repeat;
-			}
-		&--twitter {
-			background:#059FF5 url(../images/twitter.svg) 50% 50% / 45% auto no-repeat;
-			}
-		&--voice-memos {
-			background:#673AB7 url(../images/voice-memos.svg) 50% 50% / auto 80% no-repeat;
-			}
-		&--wiki-offline {
-			background:
-				url(../images/wiki-offline.svg) 50% 50% / 55% auto no-repeat,
-				linear-gradient(to bottom, #FEFFFC, #DFE1DE)
-				#EEF0ED;
-			}
-		&--2048-puzzle {
-			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
 			}
 		&--svgomg {
 			background:
@@ -110,14 +110,8 @@
 				linear-gradient(45deg, #E6E6E6 25%, transparent 25%, transparent 75%, #E6E6E6 75%, #E6E6E6) 10px 10px / 20px 20px,
 				#F2F2F2;
 			}
-		&--wave-pd1 {
-			background:#191622 url(../images/wave-pd1.svg) 50% 50% / auto 70% no-repeat;
-			}
-		&--webnfc {
-			background:#FFC107 url(../images/webnfc.svg) 50% 50% / auto 75% no-repeat;
-			}
-		&--babe {
-			background:#F90 url(../images/babe.svg) 50% 50% / auto 80% no-repeat;
+		&--telegram {
+			background:#E7EBF0 url(../images/telegram.svg) 50% 50% / 46% auto no-repeat;
 			}
 		&--session {
 			position:relative;
@@ -140,31 +134,24 @@
 				content:'';
 				}
 			}
-		&--firefox {
-			background:#005DA5 url(../images/firefox.svg) 50% 60% / auto 75% no-repeat;
+		&--voice-memos {
+			background:#673AB7 url(../images/voice-memos.svg) 50% 50% / auto 80% no-repeat;
 			}
-		&--qrcode {
-			background:#5F7D8C url(../images/qrcode.svg) 50% 50% / 40% auto no-repeat;
+		&--wave-pd1 {
+			background:#191622 url(../images/wave-pd1.svg) 50% 50% / auto 70% no-repeat;
 			}
-		&--telegram {
-			background:#E7EBF0 url(../images/telegram.svg) 50% 50% / 46% auto no-repeat;
+		&--wiki-offline {
+			background:
+				url(../images/wiki-offline.svg) 50% 50% / 55% auto no-repeat,
+				linear-gradient(to bottom, #FEFFFC, #DFE1DE)
+				#EEF0ED;
 			}
-		&--snapdrop {
-			background:#FAFAFA url(../images/snapdrop.svg) 50% 50% / 46% auto no-repeat;
-			}
-		&--google-io {
-			background:#77909D url(../images/google-io.svg) 50% 50% / 50% auto no-repeat;
-			}
-		&--poly-mail {
-			background:#E8372D url(../images/poly-mail.svg) 50% 50% / 50% auto no-repeat;
-			}
-		&--currency-x {
-			background:#3D82F7 url(../images/currency-x.svg) 100% 100% / auto 82% no-repeat;
+		&--webnfc {
+			background:#FFC107 url(../images/webnfc.svg) 50% 50% / auto 75% no-repeat;
 			}
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
 			}
-
 		}
 
 	// Action
