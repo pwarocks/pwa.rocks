@@ -4,15 +4,8 @@
 
 .list {
 
-	column-count:1;
-	column-gap:0;
-
-	@include mq($from:palm) {
-		column-count:2;
-		}
-	@include mq($from:lap) {
-		column-count:3;
-		}
+	display:flex;
+	flex-wrap:wrap;
 
 	// Title
 
@@ -37,11 +30,18 @@
 	&__item {
 
 		position:relative;
-		display:block;
+		width:100%;
 		padding-bottom:62.5%;
 		height:0;
-		break-inside:avoid;
-		text-decoration:none;
+
+		@include mq($from:palm) {
+			width:50%;
+			padding-bottom:31.25%;
+			}
+		@include mq($from:lap) {
+			width:33.33%;
+			padding-bottom:20.83%;
+			}
 
 		// Red
 
