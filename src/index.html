@@ -108,9 +108,9 @@
 			return numPool;
 		}
 		var items = document.querySelectorAll('.list__item:not([class$=suggest])');
-			items = Array.prototype.slice.call(items);
-			items = shuffle(items);
-		for (var i = 0, l = items.length; i < l; i++) {
+		items = Array.prototype.slice.call(items);
+		items = shuffle(items);
+		for (var i = 0; i < items.length; i++) {
 			items[i].style.order = '-' + (i + 1);
 		}
 	</script>
