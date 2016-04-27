@@ -31,19 +31,24 @@
 
 		position:relative;
 		width:100%;
-		padding-bottom:62.5%;
-		height:0;
 
 		@include mq($from:palm) {
 			width:50%;
-			padding-bottom:31.25%;
 			}
 		@include mq($from:lap) {
 			width:33.33%;
-			padding-bottom:20.83%;
 			}
 
-		// Red
+		}
+
+	// Link
+
+	&__link {
+
+		display:block;
+		padding-bottom:62.5%;
+
+		// Apps
 
 		&--2048-puzzle {
 			background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
@@ -152,15 +157,16 @@
 		&--suggest {
 			background:#282828 url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
 			}
+
 		}
 
 	// Action
 
-	&__item:focus {
+	&__link:focus {
 		outline:none;
 		}
-	&__item:hover &__title,
-	&__item:focus &__title {
+	&__link:hover &__title,
+	&__link:focus &__title {
 		height:40px;
 		}
 
