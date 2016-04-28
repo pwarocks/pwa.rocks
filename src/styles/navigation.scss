@@ -8,11 +8,12 @@
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
+	background:#222;
 
 	&__button {
 
 		margin:4px 2px;
-		padding:8px 10px 10px;
+		padding:6px 10px 7px;
 		outline:none;
 		border:none;
 		border-radius:20px;
@@ -26,8 +27,8 @@
 			background:#5AC1F2;
 			color:#000;
 			}
-		&:active, &:focus {
-			box-shadow:0 0 0 2px #5AC1F2;
+		&:focus {
+			box-shadow:0 0 0 2px #FFF;
 			}
 
 		}
