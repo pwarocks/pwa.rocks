@@ -12,12 +12,16 @@
 	&--filter &__item:not(:last-child) {
 		display:none;
 		}
+	&--business &__item[data-tags~=business],
+	&--demo &__item[data-tags~=demo],
+	&--event &__item[data-tags~=event],
 	&--game &__item[data-tags~=game],
-	&--media &__item[data-tags~=media],
+	&--news &__item[data-tags~=news],
+	&--other &__item[data-tags~=other],
+	&--reference &__item[data-tags~=reference],
+	&--shopping &__item[data-tags~=shopping],
 	&--social &__item[data-tags~=social],
-	&--util &__item[data-tags~=util],
-	&--read &__item[data-tags~=read],
-	&--merch &__item[data-tags~=merch] {
+	&--tool &__item[data-tags~=tool] {
 		display:block;
 		}
 
