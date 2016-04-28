@@ -4,8 +4,8 @@
 
 @import '../../node_modules/sass-mq/mq';
 
-@import 'reset';
 @import 'defaults';
-@import 'page';
-@import 'navigation';
 @import 'list';
+@import 'navigation';
+@import 'page';
+@import 'reset';
