@@ -1,0 +1,35 @@
+// ------------------------------------------------------------------
+// Navigation
+// ------------------------------------------------------------------
+
+.navigation {
+
+	padding:6px 0;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+
+	&__button {
+
+		margin:4px 2px;
+		padding:8px 10px 10px;
+		outline:none;
+		border:none;
+		border-radius:20px;
+		background:#383838;
+		color:#FFF;
+
+		&::-moz-focus-inner {
+			border:none;
+			}
+		&--active {
+			background:#5AC1F2;
+			color:#000;
+			}
+		&:active, &:focus {
+			box-shadow:0 0 0 2px #5AC1F2;
+			}
+
+		}
+
+	}

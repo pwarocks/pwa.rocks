@@ -7,6 +7,20 @@
 	display:flex;
 	flex-wrap:wrap;
 
+	// Filter
+
+	&--filter &__item:not(:last-child) {
+		display:none;
+		}
+	&--game &__item[data-tags~=game],
+	&--media &__item[data-tags~=media],
+	&--social &__item[data-tags~=social],
+	&--util &__item[data-tags~=util],
+	&--read &__item[data-tags~=read],
+	&--merch &__item[data-tags~=merch] {
+		display:block;
+		}
+
 	// Title
 
 	&__title {
