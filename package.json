@@ -6,7 +6,7 @@
     "server": "gulp"
   },
   "devDependencies": {
-    "@alrra/travis-scripts": "^2.1.0",
+    "@alrra/travis-scripts": "^3.0.1",
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.2",
     "gulp": "^3.9.1",
