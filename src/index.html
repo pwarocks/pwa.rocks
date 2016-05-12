@@ -3,14 +3,14 @@
 <head>
 	<title>A selection of Progressive Web Apps</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="A handful of nice examples showcasing what Progressive Web Apps can look like.">
-	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="/styles/screen.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
-	<link rel="manifest" href=".webmanifest">
-	<link rel="icon" href="favicon.ico">
-	<link rel="icon" type="image/png" href="images/icon-228x228.png" sizes="228x228">
-	<link rel="apple-touch-icon" type="image/png" href="images/icon-228x228.png">
+	<link rel="manifest" href="/.webmanifest">
+	<link rel="icon" href="/favicon.ico">
+	<link rel="icon" type="image/png" href="/images/icon-228x228.png" sizes="228x228">
+	<link rel="apple-touch-icon" type="image/png" href="/images/icon-228x228.png">
 	<link rel="canonical" href="https://pwa.rocks/">
 </head>
 <body block="page">
@@ -175,38 +175,45 @@
 		<p>Made by the <a elem="link" href="https://twitter.com/ODevRel/lists/odevrel-team/members">Opera DevRel Team</a></p>
 	</footer>
 	<script>
-		var list = document.querySelector('.list');
-		var items = document.querySelectorAll('.list__item:not(:last-child)');
-		var buttons = document.querySelectorAll('.navigation__button');
+		(function() {
 
-		for (var i = 0; i < buttons.length; i++) {
-			buttons[i].addEventListener('click', function() {
-				this.classList.toggle('navigation__button--active');
-				list.classList.toggle('list--' + this.textContent);
-				if (document.querySelectorAll('.navigation__button--active').length) {
-					list.classList.add('list--filter');
-				} else {
-					list.classList.remove('list--filter');
-				}
-			});
-		}
+			if (location.protocol != 'https:' || location.hostname != 'pwa.rocks') {
+				location.href = 'https://pwa.rocks/';
+			}
 
-		// Shuffle function courtesy of Dudley Storey
-		// thenewcode.com/82/Recipes-for-Randomness-in-JavaScript
-		function shuffle(numPool) {
-			for (var j, x, i = numPool.length; i; j = parseInt(Math.random() * i), x = numPool[--i], numPool[i] = numPool[j], numPool[j] = x);
-			return numPool;
-		}
-		var items = shuffle(Array.prototype.slice.call(items));
-		for (var i = 0; i < items.length; i++) {
-			items[i].style.order = '-' + (i + 1);
-		}
+			var list = document.querySelector('.list');
+			var items = document.querySelectorAll('.list__item:not(:last-child)');
+			var buttons = document.querySelectorAll('.navigation__button');
+
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].addEventListener('click', function() {
+					this.classList.toggle('navigation__button--active');
+					list.classList.toggle('list--' + this.textContent);
+					if (document.querySelectorAll('.navigation__button--active').length) {
+						list.classList.add('list--filter');
+					} else {
+						list.classList.remove('list--filter');
+					}
+				});
+			}
+
+			// Shuffle function courtesy of Dudley Storey
+			// thenewcode.com/82/Recipes-for-Randomness-in-JavaScript
+			function shuffle(numPool) {
+				for (var j, x, i = numPool.length; i; j = parseInt(Math.random() * i), x = numPool[--i], numPool[i] = numPool[j], numPool[j] = x);
+				return numPool;
+			}
+			var items = shuffle(Array.prototype.slice.call(items));
+			for (var i = 0; i < items.length; i++) {
+				items[i].style.order = '-' + (i + 1);
+			}
+
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+
+		}());
 	</script>
-	<script>
-		if (location.protocol != 'https:' || location.hostname != 'pwa.rocks') {
-			location.href = 'https://pwa.rocks/';
-		}
-	</script>
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-Q5SW" style="display:none"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-Q5SW')</script>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-Q5SW" style="display:none"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-Q5SW')</script>
 </body>
 </html>

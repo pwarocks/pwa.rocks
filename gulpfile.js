@@ -44,8 +44,8 @@ gulp.task('server', () => {
 			baseDir: 'dest'
 		},
 		rewriteRules: [{
-			match: /<script>.*\n.*pwa\.rocks.*\n.*<\/script>/gm,
-	        replace: ''
+			match: /location\.href = 'https:\/\/pwa\.rocks\/';/,
+			replace: '// Redirect removed during development.'
 		}]
 	});
 });
