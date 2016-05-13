@@ -14,7 +14,7 @@ self.addEventListener('install', function(event) {
 				'/favicon.ico',
 				'/styles/screen.css',
 				'/images/icon-228x228.png'
-				'/images/2048-puzzle.svg',
+				'/images/2048-puzzle.svg', // TODO: generate when running `gulp`.
 				'/images/air-horner.svg',
 				'/images/babe.svg',
 				'/images/currency-x.svg',
@@ -32,6 +32,7 @@ self.addEventListener('install', function(event) {
 				'/images/pokedex.png',
 				'/images/poly-mail.svg',
 				'/images/qrcode.svg',
+				'/images/selio.svg',
 				'/images/session.svg',
 				'/images/smaller-pictures.svg',
 				'/images/snapdrop.svg',
