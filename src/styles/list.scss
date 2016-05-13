@@ -142,6 +142,12 @@
 		&--telegram {
 			background:#E7EBF0 url(../images/telegram.svg) 50% 50% / 46% auto no-repeat;
 			}
+		&--selio {
+			background:
+				url(../images/selio.svg) 50% 50% / auto 75% no-repeat,
+				linear-gradient(to bottom, #DF1C1E, #A00F1D)
+				#A00F1D;
+			}
 		&--session {
 			position:relative;
 			background:
