@@ -10,7 +10,6 @@ self.addEventListener('install', function(event) {
 		caches.open(OFFLINE_CACHE).then(function(cache) {
 			return cache.addAll([
 				OFFLINE_URL,
-				'https://fonts.googleapis.com/css?family=Permanent+Marker',
 				'/favicon.ico',
 				'/styles/screen.css',
 				'/images/icon-228x228.png'
