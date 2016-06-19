@@ -12,8 +12,8 @@ self.addEventListener('install', function(event) {
 				OFFLINE_URL,
 				'/favicon.ico',
 				'/styles/screen.css',
-				'/images/icon-228x228.png'
-				'/images/2048-puzzle.svg', // TODO: generate when running `gulp`.
+				'/images/icon-228x228.png',
+				'/images/2048-puzzle.svg',
 				'/images/air-horner.svg',
 				'/images/babe.svg',
 				'/images/currency-x.svg',
