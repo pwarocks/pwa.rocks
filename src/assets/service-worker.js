@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'devopera';
-const HASH = '4140ca48a'; // TODO: calculate when running `gulp`.
+const HASH = 'x6waLwtF'; // TODO: calculate when running `gulp`.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/';
 
@@ -10,23 +10,31 @@ self.addEventListener('install', function(event) {
 		caches.open(OFFLINE_CACHE).then(function(cache) {
 			return cache.addAll([
 				OFFLINE_URL,
-				'/favicon.ico',
+
 				'/styles/screen.css',
+				'/fonts/permanent-marker.woff'
+				'/favicon.ico',
 				'/images/icon-228x228.png',
+
 				'/images/2048-puzzle.svg',
 				'/images/air-horner.svg',
+				'/images/aliexpress.svg',
 				'/images/babe.svg',
 				'/images/currency-x.svg',
+				'/images/datememe.svg',
 				'/images/dev-opera.svg',
 				'/images/emojoy.svg',
+				'/images/expense-manager.svg',
 				'/images/firefox.svg',
 				'/images/flipboard.svg',
 				'/images/flipkart.svg',
+				'/images/geo-news.svg',
 				'/images/get-kana.svg',
 				'/images/google-io.svg',
 				'/images/guitar-tuner.svg',
-				'/images/icon.svg',
 				'/images/inbox-attack.svg',
+				'/images/jalantikus.svg',
+				'/images/meatscope.svg',
 				'/images/oumy.svg',
 				'/images/pokedex.png',
 				'/images/poly-mail.svg',
@@ -36,13 +44,16 @@ self.addEventListener('install', function(event) {
 				'/images/smaller-pictures.svg',
 				'/images/snapdrop.svg',
 				'/images/soundslice.svg',
+				'/images/spaces.svg',
 				'/images/suggest.svg',
 				'/images/svgomg.svg',
 				'/images/telegram.svg',
 				'/images/voice-memos.svg',
+				'/images/washington-post.svg',
 				'/images/wave-pd1.svg',
 				'/images/webnfc.svg',
 				'/images/wiki-offline.svg',
+
 			]);
 		})
 	);
