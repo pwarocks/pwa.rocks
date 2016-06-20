@@ -12,7 +12,7 @@ self.addEventListener('install', function(event) {
 				OFFLINE_URL,
 
 				'/styles/screen.css',
-				'/fonts/permanent-marker.woff'
+				'/fonts/permanent-marker.woff',
 				'/favicon.ico',
 				'/images/icon-228x228.png',
 
@@ -52,7 +52,7 @@ self.addEventListener('install', function(event) {
 				'/images/washington-post.svg',
 				'/images/wave-pd1.svg',
 				'/images/webnfc.svg',
-				'/images/wiki-offline.svg',
+				'/images/wiki-offline.svg'
 
 			]);
 		})
