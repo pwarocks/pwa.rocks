@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'devopera';
-const HASH = 'x6waLwtF'; // TODO: calculate when running `gulp`.
+const HASH = 'x6waLwtl'; // TODO: calculate when running `gulp`.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/';
 
