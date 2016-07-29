@@ -52,6 +52,7 @@ self.addEventListener('install', function(event) {
 				'/images/washington-post.svg',
 				'/images/wave-pd1.svg',
 				'/images/webnfc.svg',
+				'/images/billings-gazette.svg',
 				'/images/wiki-offline.svg'
 
 			]);
