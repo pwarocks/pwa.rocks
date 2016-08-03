@@ -208,6 +208,12 @@
 				linear-gradient(to bottom, #FEFFFC, #DFE1DE)
 				#EEF0ED;
 			}
+		&--web-flap {
+			image-rendering:pixelated;
+			background:
+				url(../images/web-flap.png) 50% 50% / 50% auto no-repeat,
+				#6CC851;
+			}
 		&--webnfc {
 			background:#FFC107 url(../images/webnfc.svg) 50% 50% / auto 75% no-repeat;
 			}
