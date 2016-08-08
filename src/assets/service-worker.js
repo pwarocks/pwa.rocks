@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'devopera';
-const HASH = '99d809d6'; // TODO: calculate when running `gulp`.
+const HASH = 'e9ccfde2'; // TODO: calculate when running `gulp`.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/';
 
@@ -41,6 +41,7 @@ self.addEventListener('install', function(event) {
 				'/images/prog-beer.svg',
 				'/images/qrcode.svg',
 				'/images/reacthn.svg',
+				'/images/riorun.svg',
 				'/images/selio.svg',
 				'/images/session.svg',
 				'/images/smaller-pictures.svg',
