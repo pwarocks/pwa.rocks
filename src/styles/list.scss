@@ -9,19 +9,19 @@
 
 	// Filter
 
-	&--filter &__item:not(:last-child) {
+	&--filter &__app:not(:last-child) {
 		display:none;
 		}
-	&--business &__item[data-tags~=business],
-	&--demo &__item[data-tags~=demo],
-	&--event &__item[data-tags~=event],
-	&--game &__item[data-tags~=game],
-	&--news &__item[data-tags~=news],
-	&--other &__item[data-tags~=other],
-	&--reference &__item[data-tags~=reference],
-	&--shopping &__item[data-tags~=shopping],
-	&--social &__item[data-tags~=social],
-	&--tool &__item[data-tags~=tool] {
+	&--business &__app[data-tags~=business],
+	&--demo &__app[data-tags~=demo],
+	&--event &__app[data-tags~=event],
+	&--game &__app[data-tags~=game],
+	&--news &__app[data-tags~=news],
+	&--other &__app[data-tags~=other],
+	&--reference &__app[data-tags~=reference],
+	&--shopping &__app[data-tags~=shopping],
+	&--social &__app[data-tags~=social],
+	&--tool &__app[data-tags~=tool] {
 		display:block;
 		}
 
@@ -43,9 +43,9 @@
 		transition:height 0.2s linear;
 		}
 
-	// Item
+	// App
 
-	&__item {
+	&__app {
 
 		position:relative;
 		width:100%;

@@ -14,7 +14,7 @@ gulp.task('styles', () => {
 			autoprefixer,
 			csso
 		]))
-		.pipe(gulp.dest('dest/styles'))
+		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream());
 });
 
