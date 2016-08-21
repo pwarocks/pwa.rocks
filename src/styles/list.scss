@@ -4,13 +4,13 @@
 
 .list {
 
-	display:flex;
-	flex-wrap:wrap;
+	display: flex;
+	flex-wrap: wrap;
 
 	// Filter
 
 	&__app {
-		display:none;
+		display: none;
 		}
 
 	}
@@ -26,39 +26,39 @@
 [data-filter=shopping] [data-tags~=shopping],
 [data-filter=social] [data-tags~=social],
 [data-filter=tool] [data-tags~=tool] {
-	display:block;
+	display: block;
 	}
 
 // Title
 
 .list__title {
-	position:absolute;
-	right:0;
-	bottom:0;
-	left:0;
-	background:rgba(56, 56, 56, 0.5);
-	color:#FFF;
-	text-align:center;
-	font-size:25px;
-	line-height:37px;
-	vertical-align:middle;
-	height:0;
-	overflow:hidden;
-	transition:height 0.2s linear;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(56, 56, 56, 0.5);
+	color: #FFF;
+	text-align: center;
+	font-size: 25px;
+	line-height: 37px;
+	vertical-align: middle;
+	height: 0;
+	overflow: hidden;
+	transition: height 0.2s linear;
 	}
 
 // App
 
 .list__app {
 
-	position:relative;
-	width:100%;
+	position: relative;
+	width: 100%;
 
-	@include mq($from:palm) {
-		width:50%;
+	@include mq($from: palm) {
+		width: 50%;
 		}
-	@include mq($from:lap) {
-		width:33.33%;
+	@include mq($from: lap) {
+		width: 33.33%;
 		}
 
 	}
@@ -66,8 +66,8 @@
 // Link
 
 .list__link {
-	display:block;
-	padding-bottom:62.5%;
+	display: block;
+	padding-bottom: 62.5%;
 	}
 
 // Apps
@@ -75,107 +75,107 @@
 .list__link {
 
 	&--2048-puzzle {
-		background:#EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
+		background: #EDC500 url(../images/2048-puzzle.svg) 50% 50% / 65% auto no-repeat;
 		}
 	&--air-horner {
-		background:#1194F6 url(../images/air-horner.svg) 50% 50% / 46% auto no-repeat;
+		background: #1194F6 url(../images/air-horner.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--aliexpress {
-		background:#F73F16 url(../images/aliexpress.svg) 50% 55% / 50% auto no-repeat;
+		background: #F73F16 url(../images/aliexpress.svg) 50% 55% / 50% auto no-repeat;
 		}
 	&--babe {
-		background:#F90 url(../images/babe.svg) 50% 50% / auto 80% no-repeat;
+		background: #F90 url(../images/babe.svg) 50% 50% / auto 80% no-repeat;
 		}
 	&--billings-gazette {
-		background:#FFD200 url(../images/billings-gazette.svg) 50% 50% / auto 75% no-repeat;
+		background: #FFD200 url(../images/billings-gazette.svg) 50% 50% / auto 75% no-repeat;
 		}
 	&--currency-x {
-		background:#3D82F7 url(../images/currency-x.svg) 100% 100% / auto 82% no-repeat;
+		background: #3D82F7 url(../images/currency-x.svg) 100% 100% / auto 82% no-repeat;
 		}
 	&--chrome-status {
-		background:#FFF url(../images/chrome-status.svg) 50% 50% / auto 70% no-repeat;
+		background: #FFF url(../images/chrome-status.svg) 50% 50% / auto 70% no-repeat;
 		}
 	&--datememe {
-		background:#0275D8 url(../images/datememe.svg) 50% 50% / 50% auto no-repeat;
+		background: #0275D8 url(../images/datememe.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--dev-opera {
-		background:#FFF url(../images/dev-opera.svg) 50% 50% / 45% auto no-repeat;
+		background: #FFF url(../images/dev-opera.svg) 50% 50% / 45% auto no-repeat;
 		}
 	&--emojoy {
-		background:#E1BEE7 url(../images/emojoy.svg) 50% 50% / 45% auto no-repeat;
+		background: #E1BEE7 url(../images/emojoy.svg) 50% 50% / 45% auto no-repeat;
 		}
 	&--expense-manager {
-		background:#33383A url(../images/expense-manager.svg) 50% 45% / 55% auto no-repeat;
+		background: #33383A url(../images/expense-manager.svg) 50% 45% / 55% auto no-repeat;
 		}
 	&--financial-times {
-		background:#fff1e0 url(../images/financial-times.svg) 50% 50% / 50% auto no-repeat;
+		background: #fff1e0 url(../images/financial-times.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--firefox {
-		background:#005DA5 url(../images/firefox.svg) 50% 60% / auto 75% no-repeat;
+		background: #005DA5 url(../images/firefox.svg) 50% 60% / auto 75% no-repeat;
 		}
 	&--flipboard {
-		background:#CD0000 url(../images/flipboard.svg) 50% 50% / 38% auto no-repeat;
+		background: #CD0000 url(../images/flipboard.svg) 50% 50% / 38% auto no-repeat;
 		}
 	&--flipkart {
-		background:#007AD8 url(../images/flipkart.svg) 50% 50% / 38% auto no-repeat;
+		background: #007AD8 url(../images/flipkart.svg) 50% 50% / 38% auto no-repeat;
 		}
 	&--geo-news {
-		background:#093777 url(../images/geo-news.svg) 50% 50% / auto 60% no-repeat;
+		background: #093777 url(../images/geo-news.svg) 50% 50% / auto 60% no-repeat;
 		}
 	&--get-kana {
-		background:#7C7171 url(../images/get-kana.svg) 50% 50% / 50% auto no-repeat;
+		background: #7C7171 url(../images/get-kana.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--google-io {
-		background:#77909D url(../images/google-io.svg) 50% 50% / 50% auto no-repeat;
+		background: #77909D url(../images/google-io.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--guitar-tuner {
-		background:#36474F url(../images/guitar-tuner.svg) 50% 50% / 46% auto no-repeat;
+		background: #36474F url(../images/guitar-tuner.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--jalantikus {
-		background:#0E161C url(../images/jalantikus.svg) 50% 50% / auto 65% no-repeat;
+		background: #0E161C url(../images/jalantikus.svg) 50% 50% / auto 65% no-repeat;
 		}
 	&--inbox-attack {
-		background:#CBDEA8 url(../images/inbox-attack.svg) 50% 50% / 55% auto no-repeat;
+		background: #CBDEA8 url(../images/inbox-attack.svg) 50% 50% / 55% auto no-repeat;
 		}
 	&--meatscope {
-		background:#03A9F4 url(../images/meatscope.svg) 50% 50% / 46% auto no-repeat;
+		background: #03A9F4 url(../images/meatscope.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--oumy {
-		background:#F3FAFD url(../images/oumy.svg) 50% 50% / 45% auto no-repeat;
+		background: #F3FAFD url(../images/oumy.svg) 50% 50% / 45% auto no-repeat;
 		}
 	&--pokedex {
-		image-rendering:pixelated;
+		image-rendering: pixelated;
 		background:
 			url(../images/pokedex.png) 50% 50% / 50% auto no-repeat,
 			linear-gradient(to right, #78C850 50%, #A040A0 50%)
 			#78C850;
 		}
 	&--poly-mail {
-		background:#E8372D url(../images/poly-mail.svg) 50% 50% / 50% auto no-repeat;
+		background: #E8372D url(../images/poly-mail.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--prog-beer {
-		background:#FFE400 url(../images/prog-beer.svg) 50% 50% / auto 70% no-repeat;
+		background: #FFE400 url(../images/prog-beer.svg) 50% 50% / auto 70% no-repeat;
 		}
 	&--reacthn {
-		background:#00D8FF url(../images/reacthn.svg) 50% 50% / 42% auto no-repeat;
+		background: #00D8FF url(../images/reacthn.svg) 50% 50% / 42% auto no-repeat;
 		}
 	&--riorun {
-		background:#1C92C8 url(../images/riorun.svg) 50% 50% / 80% auto no-repeat;
+		background: #1C92C8 url(../images/riorun.svg) 50% 50% / 80% auto no-repeat;
 		}
 	&--qrcode {
-		background:#5F7D8C url(../images/qrcode.svg) 50% 50% / 40% auto no-repeat;
+		background: #5F7D8C url(../images/qrcode.svg) 50% 50% / 40% auto no-repeat;
 		}
 	&--smaller-pictures {
-		background:#212121 url(../images/smaller-pictures.svg) 50% 50% / 46% auto no-repeat;
+		background: #212121 url(../images/smaller-pictures.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--snapdrop {
-		background:#FAFAFA url(../images/snapdrop.svg) 50% 50% / 46% auto no-repeat;
+		background: #FAFAFA url(../images/snapdrop.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--soundslice {
-		background:#60506F url(../images/soundslice.svg) 50% 50% / 45% auto no-repeat;
+		background: #60506F url(../images/soundslice.svg) 50% 50% / 45% auto no-repeat;
 		}
 	&--spaces {
-		background:#ECEFF1 url(../images/spaces.svg) 50% 50% / 45% auto no-repeat;
+		background: #ECEFF1 url(../images/spaces.svg) 50% 50% / 45% auto no-repeat;
 		}
 	&--svgomg {
 		background:
@@ -185,7 +185,7 @@
 			#F2F2F2;
 		}
 	&--telegram {
-		background:#E7EBF0 url(../images/telegram.svg) 50% 50% / 46% auto no-repeat;
+		background: #E7EBF0 url(../images/telegram.svg) 50% 50% / 46% auto no-repeat;
 		}
 	&--selio {
 		background:
@@ -194,37 +194,37 @@
 			#A00F1D;
 		}
 	&--session {
-		position:relative;
+		position: relative;
 		background:
 			url(../images/session.svg) 52% 50% / 70% auto no-repeat,
 			linear-gradient(#EB2, #DA1)
 			#DDAF49;
 		&::before {
-			position:absolute;
-			top:10px;
-			right:10px;
-			bottom:10px;
-			left:10px;
-			border:1px dashed #C93;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			bottom: 10px;
+			left: 10px;
+			border: 1px dashed #C93;
 			box-shadow:
 				10px 10px 0 #E5B219,
 				-10px 10px 0 #E5B219,
 				-10px -10px 0 #E5B219,
 				10px -10px 0 #E5B219;
-			content:'';
+			content: '';
 			}
 		}
 	&--voice-memos {
-		background:#673AB7 url(../images/voice-memos.svg) 50% 50% / auto 80% no-repeat;
+		background: #673AB7 url(../images/voice-memos.svg) 50% 50% / auto 80% no-repeat;
 		}
 	&--financial-times {
-		background:#fff1e0 url(../images/financial-times.svg) 50% 50% / 50% auto no-repeat;
+		background: #fff1e0 url(../images/financial-times.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--washington-post {
-		background:#000 url(../images/washington-post.svg) 50% 50% / 50% auto no-repeat;
+		background: #000 url(../images/washington-post.svg) 50% 50% / 50% auto no-repeat;
 		}
 	&--wave-pd1 {
-		background:#191622 url(../images/wave-pd1.svg) 50% 50% / auto 70% no-repeat;
+		background: #191622 url(../images/wave-pd1.svg) 50% 50% / auto 70% no-repeat;
 		}
 	&--wiki-offline {
 		background:
@@ -233,13 +233,13 @@
 			#EEF0ED;
 		}
 	&--web-flap {
-		image-rendering:pixelated;
+		image-rendering: pixelated;
 		background:
 			url(../images/web-flap.png) 50% 50% / 50% auto no-repeat,
 			#6CC851;
 		}
 	&--webnfc {
-		background:#FFC107 url(../images/webnfc.svg) 50% 50% / auto 75% no-repeat;
+		background: #FFC107 url(../images/webnfc.svg) 50% 50% / auto 75% no-repeat;
 		}
 
 	}
@@ -249,11 +249,11 @@
 .list {
 
 	&__link:focus {
-		outline:none;
+		outline: none;
 		}
 	&__link:hover &__title,
 	&__link:focus &__title {
-		height:40px;
+		height: 40px;
 		}
 
 	}
