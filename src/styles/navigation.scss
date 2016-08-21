@@ -4,33 +4,36 @@
 
 .navigation {
 
-	padding:6px 0;
+	padding:12px 0;
+	max-width:100%;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 	background:#222;
 
-	&__button {
-
-		margin:4px 2px;
+	// Elements
+	&__tag {
+		position:absolute;
+		clip:rect(0 0 0 0);
+		}
+	&__label {
+		margin:4px;
 		padding:6px 10px 7px;
 		outline:none;
 		border:none;
 		border-radius:20px;
 		background:#383838;
 		color:#FFF;
+		font:14px/1 Helvetica, sans-serif;
+		}
 
-		&::-moz-focus-inner {
-			border:none;
-			}
-		&--active {
-			background:#5AC1F2;
-			color:#000;
-			}
-		&:focus {
-			box-shadow:0 0 0 2px #FFF;
-			}
-
+	// Action
+	&__tag:focus + &__label {
+		box-shadow:0 0 0 4px #5AC1F2;
+		}
+	&__tag:checked + &__label {
+		background:#FFF;
+		color:#000;
 		}
 
 	}
