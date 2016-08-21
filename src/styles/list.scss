@@ -36,14 +36,14 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(56, 56, 56, 0.5);
-	color: #FFF;
-	text-align: center;
-	font-size: 25px;
-	line-height: 37px;
-	vertical-align: middle;
-	height: 0;
 	overflow: hidden;
+	height: 0;
+	background: rgba(#000, 0.4);
+	color: #FFF;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 37px;
+	font-size: 25px;
 	transition: height 0.2s linear;
 	}
 
@@ -66,8 +66,14 @@
 // Link
 
 .list__link {
+
 	display: block;
 	padding-bottom: 62.5%;
+
+	&:focus {
+		outline: none;
+		}
+
 	}
 
 // Apps
@@ -248,9 +254,6 @@
 
 .list {
 
-	&__link:focus {
-		outline: none;
-		}
 	&__link:hover &__title,
 	&__link:focus &__title {
 		height: 40px;
