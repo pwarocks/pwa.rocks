@@ -11,7 +11,7 @@ self.addEventListener('install', function(event) {
 			return cache.addAll([
 				OFFLINE_URL,
 
-				'/styles/screen.css',
+				'/screen.css',
 				'/fonts/permanent-marker.woff',
 				'/favicon.ico',
 				'/images/icon-228x228.png',
