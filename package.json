@@ -7,12 +7,12 @@
   },
   "devDependencies": {
     "@alrra/travis-scripts": "^3.0.1",
-    "autoprefixer": "^6.3.6",
-    "browser-sync": "^2.13.0",
+    "autoprefixer": "^6.5.0",
+    "browser-sync": "^2.17.2",
     "gulp": "^3.9.1",
     "gulp-beml": "^1.0.0",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-postcss": "^6.1.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "postcss-csso": "^1.1.2",
     "sass-mq": "^3.2.9"
