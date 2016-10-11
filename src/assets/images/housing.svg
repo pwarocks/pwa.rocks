@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="400px" height="399px" viewBox="0 0 400 399" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group">
-            <rect id="Rectangle-2" fill="#FBDD00" x="0" y="0" width="400" height="399" rx="20"></rect>
-            <path d="M138.292,174.803 C104.573,208.525 76.984,236.492 76.984,236.952 C76.984,238.553 106.736,267.328 108.971,267.889 C110.2,268.197 112.18,268.004 113.536,267.442 C116.072,266.392 194.131,187.712 197.378,182.934 C199.719,179.489 200.829,179.448 202.756,182.738 C205.051,186.656 283.853,266.36 286.525,267.467 C287.836,268.01 289.821,268.195 291.056,267.888 C293.638,267.247 323.016,238.426 323.016,236.533 C323.016,235.215 201.707,113.492 200.393,113.492 C199.956,113.492 172.011,141.082 138.292,174.803" id="path1" fill="#780ADF"></path>
-        </g>
-    </g>
-</svg>
+<svg width="400" height="399" viewBox="0 0 400 399" xmlns="http://www.w3.org/2000/svg"><title>Housing.com icon</title><g fill="none" fill-rule="evenodd"><rect fill="#FBDD00" width="400" height="399" rx="20"/><path d="M138.3 174.8C104.6 208.5 77 236.5 77 237c0 1.6 29.7 30.3 32 31 1.2.2 3.2 0 4.5-.6 2.6-1 80.6-79.7 84-84.5 2.2-3.5 3.3-3.6 5.3-.3 2.3 4 81 83.7 83.7 84.8 1.3.5 3.3.7 4.6.4 2.6-.8 32-29.6 32-31.5 0-1.3-121.3-123-122.6-123-.4 0-28.4 27.6-62 61.3" fill="#780ADF"/></g></svg>
