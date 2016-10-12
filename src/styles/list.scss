@@ -170,6 +170,21 @@
 			content: '';
 			}
 		}
+	&--podle {
+		background: linear-gradient(300deg, #7F4FFF, #9E54FF);
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -23% 0 0 -23%;
+			width: 46%;
+			height: 0;
+			padding-bottom: 46%;
+			background:
+				url(../images/podle.svg) 50% 50% / 90% auto no-repeat;
+			content: '';
+			}
+		}
 	&--pokedex {
 		image-rendering: pixelated;
 		background:
