@@ -1,7 +1,7 @@
 'use strict';
 
-const PREFIX = 'devopera';
-const HASH = '89e7dd27'; // TODO: calculate when running `gulp`.
+const PREFIX = 'pwa.rocks';
+const HASH = ''; // Calculated automatically when running `gulp`; leave empty.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 const OFFLINE_URL = '/';
 
