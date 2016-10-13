@@ -2,14 +2,24 @@ const autoprefixer = require('autoprefixer');
 const beml = require('gulp-beml');
 const csso = require('postcss-csso');
 const del = require('del');
+const glob = require('glob');
 const gulp = require('gulp');
 const hash = require('hash-files');
 const htmlmin = require('gulp-htmlmin');
+const jsesc = require('jsesc');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const sync = require('browser-sync').create();
+
+const stringify = function(value) {
+	return jsesc(value, {
+		wrap: true,
+		compact: false,
+		indentLevel: 3,
+	});
+};
 
 const shortHash = function(files) {
 	return hash.sync({
@@ -22,21 +32,33 @@ gulp.task('clean', () => {
 });
 
 gulp.task('cache', ['copy'], () => {
-	const assetsHash = shortHash([
+
+	const assets = [
 		'dest/favicon.ico',
 		'dest/screen.css',
-		'dest/fonts/*',
-		'dest/images/*',
-	]);
+		...glob.sync('dest/fonts/*'),
+		...glob.sync('dest/images/*'),
+	];
+	const assetsHash = shortHash(assets);
+	const assetCacheList = [
+		'/',
+		...assets
+			// Remove all `images/icon-*` files except for the one used in
+			// the HTML.
+			.filter(path => !path.includes('images/icon-') || path.includes('icon-228x228.png'))
+			.map(path => path
+				.replace(/^dest\//, '/')
+				.replace('screen.css', `${assetsHash}.css`)),
+	];
 
 	gulp.src('dest/service-worker.js')
 		.pipe(replace(
-			/(const HASH = ')(';)/g,
-			'$1' + assetsHash + '$2'
+			'%HASH%',
+			stringify(assetsHash)
 		))
 		.pipe(replace(
-			/('\/)(screen)(\.css',)/g,
-			'$1' + assetsHash + '$3'
+			'%CACHE_LIST%',
+			stringify(assetCacheList)
 		))
 		.pipe(rename(function(path) {
 			path.basename = assetsHash;
@@ -62,7 +84,7 @@ gulp.task('cache', ['copy'], () => {
 
 	return del([
 		'dest/screen.css',
-		'dest/service-worker.js'
+		'dest/service-worker.js',
 	]);
 });
 
@@ -71,7 +93,7 @@ gulp.task('styles', () => {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss([
 			autoprefixer,
-			csso
+			csso,
 		]))
 		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream());
@@ -84,8 +106,7 @@ gulp.task('html', () => {
 			modPrefix: '--' }))
 		.pipe(htmlmin({
 			removeComments: true,
-			collapseWhitespace: true
-		}))
+			collapseWhitespace: true }))
 		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream());
 });
@@ -100,11 +121,11 @@ gulp.task('server', () => {
 	sync.init({
 		notify: false,
 		server: {
-			baseDir: 'dest'
+			baseDir: 'dest',
 		},
 		rewriteRules: [{
 			match: /location\.href = 'https:\/\/pwa\.rocks\/';/,
-			replace: '// Redirect removed during development.'
+			replace: '// Redirect removed during development.',
 		}]
 	});
 });
@@ -120,11 +141,11 @@ gulp.task('build', [
 	'styles',
 	'html',
 	'copy',
-	'cache'
+	'cache',
 ]);
 
 gulp.task('default', [
 	'build',
 	'server',
-	'watch'
+	'watch',
 ]);

@@ -1,71 +1,13 @@
 'use strict';
 
 const PREFIX = 'pwa.rocks';
-const HASH = ''; // Calculated automatically when running `gulp`; leave empty.
+const HASH = %HASH%; // Computed at build time.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
-const OFFLINE_URL = '/';
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(OFFLINE_CACHE).then(function(cache) {
-			return cache.addAll([
-				OFFLINE_URL,
-
-				'/screen.css',
-				'/fonts/permanent-marker.woff',
-				'/favicon.ico',
-				'/images/icon-228x228.png',
-
-				'/images/2048-puzzle.svg',
-				'/images/air-horner.svg',
-				'/images/aliexpress.svg',
-				'/images/babe.svg',
-				'/images/billings-gazette.svg',
-				'/images/currency-x.svg',
-				'/images/chrome-status.svg',
-				'/images/datememe.svg',
-				'/images/dev-opera.svg',
-				'/images/emojoy.svg',
-				'/images/expense-manager.svg',
-				'/images/financial-times.svg',
-				'/images/firefox.svg',
-				'/images/flipboard.svg',
-				'/images/flipkart.svg',
-				'/images/geo-news.svg',
-				'/images/get-kana.svg',
-				'/images/google-io.svg',
-				'/images/guitar-tuner.svg',
-				'/images/housing.svg',
-				'/images/inbox-attack.svg',
-				'/images/jalantikus.svg',
-				'/images/meatscope.svg',
-				'/images/oumy.svg',
-				'/images/paper-planes.svg',
-				'/images/podle.svg',
-				'/images/pokedex.png',
-				'/images/poly-mail.svg',
-				'/images/prog-beer.svg',
-				'/images/qrcode.svg',
-				'/images/reacthn.svg',
-				'/images/riorun.svg',
-				'/images/selio.svg',
-				'/images/session.svg',
-				'/images/smaller-pictures.svg',
-				'/images/snapdrop.svg',
-				'/images/soundslice.svg',
-				'/images/spaces.svg',
-				'/images/suggest.svg',
-				'/images/svgomg.svg',
-				'/images/telegram.svg',
-				'/images/voice-memos.svg',
-				'/images/financial-times.svg',
-				'/images/washington-post.svg',
-				'/images/wave-pd1.svg',
-				'/images/web-flap.png',
-				'/images/webnfc.svg',
-				'/images/wiki-offline.svg'
-
-			]);
+			return cache.addAll(%CACHE_LIST%); // Computed at build time.
 		})
 	);
 });
@@ -101,7 +43,7 @@ self.addEventListener('fetch', function(event) {
 					exception
 				);
 				return caches.open(OFFLINE_CACHE).then(function(cache) {
-					return cache.match(OFFLINE_URL);
+					return cache.match('/');
 				});
 			})
 		);
