@@ -1,11 +1,11 @@
-# List of Progressive Web Apps [![Build status](https://travis-ci.org/operasoftware/pwa-list.svg)](https://travis-ci.org/operasoftware/pwa-list)
+# List of Progressive Web Apps [![Build status](https://travis-ci.org/operasoftware/pwa.rocks.svg)](https://travis-ci.org/operasoftware/pwa.rocks)
 
 What is a progressive web app? See the “[Progressive Web Apps](https://developer.chrome.com/devsummit/sessions/progressiveapps)” talk by [Alex Russell](https://github.com/slightlyoff) and [Andreas Bovens](https://github.com/andreasbovens).
 
 ## Development
 
-- Clone repository locally `git clone git@github.com:operasoftware/pwa-list.git`
-- Install all dependencies `cd pwa-list && npm install`
+- Clone repository locally `git clone git@github.com:operasoftware/pwa.rocks.git`
+- Install all dependencies `cd pwa.rocks && npm install`
 - Start local server `npm run server`
 
 ## Contributing

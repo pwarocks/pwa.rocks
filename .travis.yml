@@ -1,9 +1,9 @@
 env:
   global:
-    secure: LKh9LZrsrUaZ42Rp5A+PqL7xYvQqDb1Ikg7Xoii9Zk5FYCDTZLFXyoRd5R1eHo+Kska1nXLFyxMwPxyrOaZWsXkEor0uhki82RdcmMZp/JhgGY5f2y9/Qk5ldKMrcr7LhNZhMkS4FYnYcHKcKsKPbz3SknL5UITcTy1fImm8gwxRf0mGKvqYYqVou82eMAqf6p/IRzmpbwshLLgHlbT5yKdLogfT6xSyjypjZrZ2d2ZVxo+xtiMOOJGRWn6ojAyvToMaAUqoyZ3ZRB5L75dzDADyYGV/Yy6M1S2TS5XcJzPPcFVI1IFRa3jmJlUpd33LxpuSm9hJKkY2WrYsd5c4WVqZm/cenGiktRozu31mJUDM05L/rXQAp3ayZQiImzmgUImERDX4qYd4B1ZT3OjSZaKV9F/JkPfnohMU7ilbTNL62/RQKyY2+pQbVWXSApPadTReoQilVjOrQdJxVMztVjYdTwwaKzMG18ahfmT6fDv00lTo++JhszGkNeCr7ukF0exsj5/m/PijnZaD0Xa4L+R3GcPnHEFSXIdKgvci7c/25erlExQbD1LwSfrcjA0rvY5asSAMlEuLAY6vnL17RcgyIZKQVWOhYagPhXFNZH8h05V2rRI3PinjVjYFKx+TRbARaC1TXSSAoi96hdlnI3FRrmXzYISy3iqgiG5LzCo=
+    secure: HJh15DR9Ugr1/51OrSGW2Yts3MlTh4RJ8/BvrhyP/VgOxkw1UdfeQVM0fe6roD2QbbPTE7xUk+CzBl3owgXEVkg3o7LQCuO45L3ay98zfsHoK9QK6kPNlkVnIeIo8aVO0HvxFXMCL41MsBXh0mjl1f8o1Te2Z3R9Kz346/d2LQaWA0R8dQPjjWLR5bsju1ozHCLQ/fLj1Qm/KNgZuPMtFGOnBMy1auuR6Ixf5kYDzv8+4gNjxfn0HPS88BeI6p6O5G7CKUxtEmB/Y+ht0uFxZPeazwFHlORlKy7kMfOfScykOKnIXm+SJUBbVtw9MEN/cB1KUV0T2CEk8gT+g8HcuqdAJUJfIULlXOgmZGv09v0yco+b6QL6C+Gl0lH6gjaHA7NkQUS4u3Y0tTHPsYs9NDSUD0fr+CNF5rdHuEUjtUUDoFtSuiQW8j0lvZEkhHewvPR3kLct1kQ6TypKTCPc+S6YlubtAUjexEGzn4J15/HwRYmY7KgkfrcgOCm8EH3dcO+IRHX2EOReH8boCdhmXL8Gd9bFGCRBAmzpJfcEiVyhSsBsL1vGxT0Av3aQH2SB1r0PnB1TQGuulR7ZXKZjrtCgcuD4Vb3k7XBMl5D0jmM3xmIFRpF+VuQLKf5Xx9jWuQYILItJd/0MvkYorezE12nuzWrbxBC4kkdakt12clA=
 after_success:
-  - $(npm bin)/set-up-ssh --key "${encrypted_f8a826b60c9b_key}"
-      --iv "${encrypted_f8a826b60c9b_iv}"
+  - $(npm bin)/set-up-ssh --key "${encrypted_f8ae8f7b3d49_key}"
+      --iv "${encrypted_f8ae8f7b3d49_iv}"
       --path-encrypted-key .travis-github-deploy-key.enc
   - $(npm bin)/update-branch --commands 'npm run build && touch dest/.nojekyll'
       --commit-message "Update gh-pages @ ${TRAVIS_COMMIT}"
