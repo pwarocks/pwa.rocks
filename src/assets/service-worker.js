@@ -35,10 +35,13 @@ self.addEventListener('install', function(event) {
 				'/images/get-kana.svg',
 				'/images/google-io.svg',
 				'/images/guitar-tuner.svg',
+				'/images/housing.svg',
 				'/images/inbox-attack.svg',
 				'/images/jalantikus.svg',
 				'/images/meatscope.svg',
 				'/images/oumy.svg',
+				'/images/paper-planes.svg',
+				'/images/podle.svg',
 				'/images/pokedex.png',
 				'/images/poly-mail.svg',
 				'/images/prog-beer.svg',
@@ -60,7 +63,6 @@ self.addEventListener('install', function(event) {
 				'/images/wave-pd1.svg',
 				'/images/web-flap.png',
 				'/images/webnfc.svg',
-				'/images/billings-gazette.svg',
 				'/images/wiki-offline.svg'
 
 			]);
