@@ -1,0 +1,15 @@
+/* Footer */
+
+.footer {
+	padding: 2rem;
+	background: #383838;
+	}
+	.footer__text {
+		margin: 0;
+		text-align: center;
+		font: 2rem/1 Permanent Marker, sans-serif;
+		}
+	.footer__link {
+		color: #5AC1F2;
+		text-decoration: none;
+		}

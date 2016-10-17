@@ -1,0 +1,24 @@
+/* Header */
+
+.header {
+	padding: 2rem 2rem 2.4rem;
+	background: #383838;
+	}
+	.header__title {
+		margin: 0;
+		text-align: center;
+		font: 14vw/1 Permanent Marker, sans-serif;
+		}
+	.header__link:focus {
+		margin-left: -1rem;
+		color: #5AC1F2;
+		text-decoration: none;
+		}
+
+/* Media */
+
+@media (min-width:30em) {
+	.header__title {
+		font-size: 4rem;
+		}
+	}

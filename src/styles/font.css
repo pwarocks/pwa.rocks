@@ -1,0 +1,8 @@
+/* Font */
+
+@font-face {
+	font-family: Permanent Marker;
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/permanent-marker.woff) format('woff');
+	}

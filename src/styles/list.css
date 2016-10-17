@@ -1,0 +1,44 @@
+/* List */
+
+.list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	}
+	.list__item {
+		width: 100%;
+		}
+
+/* Media */
+
+@media (min-width:30em) {
+	.list__item {
+		width:50%;
+		}
+	}
+@media (min-width:48em) {
+	.list__item {
+		width:33.33%;
+		}
+	}
+
+/* Filter */
+
+[data-tags] {
+	display: none !important;
+	}
+[data-filter=all] [data-tags],
+[data-filter=business] [data-tags~=business],
+[data-filter=demo] [data-tags~=demo],
+[data-filter=event] [data-tags~=event],
+[data-filter=game] [data-tags~=game],
+[data-filter=news] [data-tags~=news],
+[data-filter=other] [data-tags~=other],
+[data-filter=reference] [data-tags~=reference],
+[data-filter=shopping] [data-tags~=shopping],
+[data-filter=social] [data-tags~=social],
+[data-filter=tool] [data-tags~=tool] {
+	display: block !important;
+	}

@@ -1,0 +1,39 @@
+/* App */
+
+.app {
+	position: relative;
+	display: block;
+	border-bottom: 2.5rem solid;
+	text-decoration: none;
+	}
+	.app__wrapper {
+		padding-top: 62.5%;
+		}
+	.app__title {
+		position: absolute;
+		right: 0;
+		bottom: -2.5rem;
+		left: 0;
+		overflow: hidden;
+		margin: 0;
+		padding-top: 0.55rem;
+		height: 2rem;
+		background: rgba(0, 0, 0, 0.5);
+		color: #FFF;
+		text-align: center;
+		font: 1.4rem/1 Permanent Marker, sans-serif;
+		transition: height 0.1s linear;
+		}
+
+/* Action */
+
+.app:hover,
+.app:focus {
+	outline: none;
+	box-shadow:0 0 0 0.3rem #5AC1F2 inset;
+	}
+	.app:hover .app__title,
+	.app:focus .app__title {
+		height: 2.1rem;
+		background: #5AC1F2;
+		}

@@ -1,0 +1,9 @@
+/* Page */
+
+.page {
+	margin: auto;
+	max-width: 1024px;
+	background: #181818;
+	color: #FFF;
+	font: 1rem Helvetica, sans-serif;
+	}
