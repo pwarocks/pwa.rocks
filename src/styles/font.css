@@ -4,5 +4,8 @@
 	font-family: Permanent Marker;
 	font-weight: normal;
 	font-style: normal;
-	src: url(../fonts/permanent-marker.woff) format('woff');
+	src:
+		local('Permanent Marker'), local('PermanentMarker'),
+		url(../fonts/permanent-marker.woff2) format('woff2'),
+		url(../fonts/permanent-marker.woff) format('woff');
 	}
