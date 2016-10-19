@@ -1,0 +1,21 @@
+/* Suggest */
+
+.suggest {
+	position: relative;
+	display: block;
+	padding-bottom: 2.5rem;
+	background: currentcolor url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
+	color: #383838;
+	text-decoration: none;
+	}
+.suggest::after {
+
+	}
+
+/* Action */
+
+.suggest:hover,
+.suggest:focus {
+	outline: none;
+	color: #5ac1f2;
+	}
