@@ -2,14 +2,26 @@
 
 .suggest {
 	position: relative;
-	display: block;
+	display: flex;
 	padding-bottom: 2.5rem;
-	background: currentcolor url(../images/suggest.svg) 50% 50% / 20% auto no-repeat;
-	color: #383838;
+	background: #383838;
 	text-decoration: none;
 	}
+.suggest::before {
+	margin: auto;
+	color: #fff;
+	font: 10rem/1 Permanent Marker, sans-serif;
+	content: '+';
+	}
 .suggest::after {
-
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	border-radius: 0.8rem;
+	border: 0.15rem dashed #fff;
+	content: '';
 	}
 
 /* Action */
@@ -17,5 +29,5 @@
 .suggest:hover,
 .suggest:focus {
 	outline: none;
-	color: #5ac1f2;
+	background: #5ac1f2;
 	}
