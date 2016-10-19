@@ -1,11 +1,5 @@
 (function() {
 
-	// Elements
-
-	var tags = document.querySelectorAll('.js-tag');
-	var list = document.querySelector('.js-list');
-	var apps = document.querySelectorAll('.js-app');
-
 	// Storage. Courtesy of Mathias Bynens
 	// https://mathiasbynens.be/notes/localstorage-pattern
 
@@ -29,6 +23,12 @@
 		return array;
 	});
 
+	// Elements
+
+	var tags = document.querySelectorAll('.js-tag');
+	var list = document.querySelector('.js-list');
+	var apps = document.querySelectorAll('.js-app');
+
 	// Tags
 
 	tags[0].checked = true;
@@ -41,11 +41,10 @@
 
 	// Reorder
 
-	function getOrder(list) {
-		var list = list.children;
+	function getOrder(array) {
 		var order = [];
-		for (var i = 0; i < list.length; i++) {
-			order.push(list[i].dataset.app);
+		for (var i = 0; i < array.length; i++) {
+			order.push(array[i].dataset.app);
 		}
 
 		return order;
@@ -57,14 +56,14 @@
 			order = item ? item.split(',') : order;
 		}
 
-		for (var i = 0; i < list.children.length; i++) {
-			var item = list.querySelector('[data-app=' + order[i] + ']')
+		for (var i = 0; i < order.length; i++) {
+			var item = list.querySelector('[data-app=' + order[i] + ']');
 			list.appendChild(item);
 		}
 
 		storage.setItem('pwa-list-order', order.join());
 	}
 
-	setOrder(shuffle(getOrder(list)));
+	setOrder(shuffle(getOrder(apps)));
 
 }());
