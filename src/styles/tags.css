@@ -7,11 +7,6 @@
 	justify-content: center;
 	background: #222;
 	}
-	.tags__title,
-	.tags__radio {
-		position: absolute;
-		clip: rect(0 0 0 0);
-		}
 	.tags__label {
 		margin: 0.2rem;
 		padding: 0.4rem 0.8rem;
