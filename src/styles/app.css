@@ -19,7 +19,7 @@
 		padding-top: 0.55rem;
 		height: 2rem;
 		background: rgba(0, 0, 0, 0.5);
-		color: #FFF;
+		color: #fff;
 		text-align: center;
 		font: 1.4rem/1 Permanent Marker, sans-serif;
 		}
@@ -29,10 +29,10 @@
 .app:hover,
 .app:focus {
 	outline: none;
-	box-shadow:0 0 0 0.3rem #5AC1F2 inset;
+	box-shadow: 0 0 0 0.3rem #5ac1f2 inset;
 	}
 	.app:hover .app__title,
 	.app:focus .app__title {
 		height: 2rem;
-		background: #5AC1F2;
+		background: #5ac1f2;
 		}

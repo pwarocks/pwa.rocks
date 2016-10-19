@@ -11,13 +11,13 @@
 		}
 	.header__link:focus {
 		margin-left: -1rem;
-		color: #5AC1F2;
+		color: #5ac1f2;
 		text-decoration: none;
 		}
 
 /* Media */
 
-@media (min-width:30em) {
+@media (min-width: 30em) {
 	.header__title {
 		font-size: 4rem;
 		}

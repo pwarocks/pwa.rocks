@@ -13,14 +13,14 @@
 
 /* Media */
 
-@media (min-width:30em) {
+@media (min-width: 30em) {
 	.list__item {
-		width:50%;
+		width: 50%;
 		}
 	}
-@media (min-width:48em) {
+@media (min-width: 48em) {
 	.list__item {
-		width:33.33%;
+		width: 33.33%;
 		}
 	}
 

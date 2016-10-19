@@ -27,8 +27,8 @@
 
 .tags__radio:hover + .tags__label,
 .tags__radio:focus + .tags__label {
-	box-shadow: 0 0 0 0.15rem #FFF;
+	box-shadow: 0 0 0 0.15rem #fff;
 	}
 .tags__radio:checked + .tags__label {
-	background: #5AC1F2;
+	background: #5ac1f2;
 	}
