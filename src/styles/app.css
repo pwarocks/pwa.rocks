@@ -22,7 +22,6 @@
 		color: #FFF;
 		text-align: center;
 		font: 1.4rem/1 Permanent Marker, sans-serif;
-		transition: height 0.1s linear;
 		}
 
 /* Action */
@@ -34,6 +33,6 @@
 	}
 	.app:hover .app__title,
 	.app:focus .app__title {
-		height: 2.1rem;
+		height: 2rem;
 		background: #5AC1F2;
 		}
