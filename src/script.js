@@ -28,6 +28,7 @@
 	var tags = document.querySelectorAll('.js-tag');
 	var list = document.querySelector('.js-list');
 	var apps = document.querySelectorAll('.js-app');
+	var suggest = document.querySelector('.js-suggest');
 
 	// Tags
 
@@ -58,7 +59,7 @@
 
 		for (var i = 0; i < order.length; i++) {
 			var item = list.querySelector('[data-app=' + order[i] + ']');
-			list.appendChild(item);
+			list.insertBefore(item, suggest);
 		}
 
 		storage.setItem('pwa-list-order', order.join());
