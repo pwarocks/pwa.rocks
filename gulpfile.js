@@ -98,7 +98,7 @@ gulp.task('cache', ['copy'], () => {
 			.filter(path => !path.includes('images/icon-') || path.includes('icon-228x228.png'))
 			.map(path => path
 				.replace(/^dest\//, '/')
-				.replace('screen.css', `${assetsHash}.css`)),
+				.replace('screen.css', `${ assetsHash }.css`)),
 	];
 
 	gulp.src('dest/service-worker.js')
@@ -121,8 +121,12 @@ gulp.task('cache', ['copy'], () => {
 			'$1' + assetsHash + '$3'
 		))
 		.pipe(replace(
-			/(\/)(service-worker)(\.js)/g,
-			'$1' + assetsHash + '$3'
+			/(<\/body>)/g,
+			`<script>
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.register('/${ assetsHash }.js');
+				}
+			</script>$1`
 		))
 		.pipe(gulp.dest('dest/'));
 
@@ -166,7 +170,10 @@ gulp.task('build', [
 ]);
 
 gulp.task('default', [
-	'build',
+	'html',
+	'styles',
+	'scripts',
+	'copy',
 	'server',
 	'watch',
 ]);
