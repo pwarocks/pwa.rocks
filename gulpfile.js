@@ -10,7 +10,7 @@ const replace = require('gulp-replace');
 const sync = require('browser-sync').create();
 const uglify = require('gulp-uglify');
 
-const stringify = function(value) {
+const stringify = value => {
 	return jsesc(value, {
 		wrap: true,
 		compact: false,
@@ -18,7 +18,7 @@ const stringify = function(value) {
 	});
 };
 
-const shortHash = function(files) {
+const shortHash = files => {
 	return hash.sync({
 		files: files
 	}).slice(0, 8);
@@ -83,6 +83,7 @@ gulp.task('cache', ['copy'], () => {
 	const assets = [
 		'dest/favicon.ico',
 		'dest/screen.css',
+		'dest/script.js',
 		...glob.sync('dest/fonts/*'),
 		...glob.sync('dest/images/*'),
 		...glob.sync('dest/apps/*'),
@@ -95,8 +96,7 @@ gulp.task('cache', ['copy'], () => {
 			// the HTML.
 			.filter(path => !path.includes('images/icon-') || path.includes('icon-228x228.png'))
 			.map(path => path
-				.replace(/^dest\//, '/')
-				.replace('screen.css', `${ assetsHash }.css`)),
+				.replace(/^dest\//, '/')),
 	];
 
 	gulp.src('dest/service-worker.js')
@@ -108,34 +108,23 @@ gulp.task('cache', ['copy'], () => {
 			'%CACHE_LIST%',
 			stringify(assetCacheList)
 		))
-		.pipe(rename(function(path) {
+		.pipe(rename(path => {
 			path.basename = assetsHash;
 		}))
 		.pipe(gulp.dest('dest/'));
 
 	gulp.src('dest/index.html')
 		.pipe(replace(
-			/(<link rel="stylesheet" href="\/)(screen)(\.css">)/g,
-			'$1' + assetsHash + '$3'
-		))
-		.pipe(replace(
 			/(<\/body>)/g,
 			`<script>
 				if ('serviceWorker' in navigator) {
-					navigator.serviceWorker.register('/${ assetsHash }.js');
+					navigator.serviceWorker.register('${ assetsHash }.js');
 				}
 			</script>$1`
 		))
 		.pipe(gulp.dest('dest/'));
 
-	gulp.src('dest/screen.css')
-		.pipe(rename(function(path) {
-			path.basename = assetsHash;
-		}))
-		.pipe(gulp.dest('dest/'));
-
 	return del([
-		'dest/screen.css',
 		'dest/service-worker.js',
 	]);
 });
