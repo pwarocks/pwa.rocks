@@ -32,16 +32,8 @@ const assets = [
 	'!src/script.js',
 ];
 
-gulp.task('clean', () => {
-	return del('dest/**/*');
-});
-
 gulp.task('html', () => {
 	return gulp.src('src/index.html')
-		.pipe(replace(
-			/(href="|src="|url\()([^\/].+\.(?:css|js|svg|png))/g,
-			'$1/$2', { skipBinary: true }
-		))
 		.pipe(posthtml([
 			require('posthtml-minifier')({
 				removeComments: true,
@@ -74,10 +66,14 @@ gulp.task('scripts', () => {
 		.pipe(sync.stream());
 });
 
-gulp.task('copy', ['clean'], () => {
+gulp.task('copy', () => {
 	return gulp.src(assets)
 		.pipe(gulp.dest('dest'))
 		.pipe(sync.stream({ once: true }));
+});
+
+gulp.task('clean', () => {
+	return del('dest/**/*');
 });
 
 gulp.task('cache', ['copy'], () => {
@@ -142,7 +138,6 @@ gulp.task('cache', ['copy'], () => {
 	]);
 });
 
-
 gulp.task('server', () => {
 	sync.init({
 		notify: false,
@@ -156,23 +151,25 @@ gulp.task('watch', () => {
 	gulp.watch('src/index.html', ['html']);
 	gulp.watch('src/styles/*.css', ['styles']);
 	gulp.watch('src/script.js', ['scripts']);
-	// TODO: Figure out why uncommenting this breaks `gulp`.
-	//gulp.watch(assets, ['copy', 'cache']);
+	gulp.watch(assets, ['copy']);
 });
 
-gulp.task('build', [
-	'clean',
+gulp.task('pack', [
 	'html',
 	'styles',
 	'scripts',
+]);
+
+
+gulp.task('build', [
+	'clean',
+	'pack',
 	'copy',
 	'cache',
 ]);
 
 gulp.task('default', [
-	'html',
-	'styles',
-	'scripts',
+	'pack',
 	'copy',
 	'server',
 	'watch',
