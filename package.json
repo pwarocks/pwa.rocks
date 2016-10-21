@@ -21,6 +21,8 @@
     "jsesc": "^2.2.0",
     "postcss-csso": "^1.1.2",
     "postcss-import": "^8.1.2",
+    "postcss-url": "^5.1.2",
+    "posthtml-collect-styles": "0.0.1",
     "posthtml-minifier": "^0.1.0",
     "posthtml-postcss": "^0.2.4"
   }

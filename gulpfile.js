@@ -35,6 +35,7 @@ const assets = [
 gulp.task('html', () => {
 	return gulp.src('src/index.html')
 		.pipe(posthtml([
+			require('posthtml-collect-styles')(),
 			require('posthtml-minifier')({
 				removeComments: true,
 				collapseWhitespace: true
@@ -52,6 +53,7 @@ gulp.task('styles', () => {
 	return gulp.src('src/screen.css')
 		.pipe(postcss([
 			require('postcss-import')(),
+			require('postcss-url')(),
 			require('autoprefixer')(),
 			require('postcss-csso')()
 		]))
