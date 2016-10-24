@@ -21,18 +21,18 @@ This combination of features will trigger the web app install banner in [Opera](
 
 ```html
 <a class="list__item app js-app"
-		href="[URL]"
-		data-app="[ID]"
-		data-tags="[TAGS]">
+		href="URL"
+		data-app="ID"
+		data-tags="TAGS">
 	<div class="app__wrapper">
 		<h2 class="app__title">
-			[TITLE]
+			TITLE
 		</h2>
 	</div>
 	<style>
-		[data-app='[ID]'] {
-			color: [COLOR];
-			background: currentColor url(apps/[ID].svg) 50% 50% / 50% auto no-repeat;
+		[data-app='ID'] {
+			color: COLOR;
+			background: currentColor url(apps/ID.svg) 50% 50% / 50% auto no-repeat;
 			}
 	</style>
 </a>
