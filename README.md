@@ -16,8 +16,8 @@ This combination of features will trigger the web app install banner in [Opera](
 
 - Fork this repository.
 - Create a branch, name it after your app.
-- Add an icon to `apps` folder.
-- Add an entry to [src/index.html](src/index.html) file:
+- Add an icon (preferably SVG) to the `apps` folder.
+- Add an entry to the [src/index.html](src/index.html) file:
 
 ```html
 <a class="list__item app js-app"
@@ -38,7 +38,7 @@ This combination of features will trigger the web app install banner in [Opera](
 </a>
 ```
 
-- Test it locally by opening [src/index.html](src/index.html) file.
+- Test it locally by opening the [src/index.html](src/index.html) file in your browser.
 - Commit all changes to your app branch and create a pull request.
 
 ## Development
@@ -46,10 +46,10 @@ This combination of features will trigger the web app install banner in [Opera](
 - Fork this repository.
 - Create a branch, name it after the feature you’re implementing.
 - Clone it locally and start making changes.
-- Test it locally by opening [src/index.html](src/index.html) file.
+- Test it locally by opening the [src/index.html](src/index.html) file in your browser.
 - Commit all changes to your feature branch and create a pull request.
 
-For the full-scaled development and testing you can use build system:
+For full-scaled development and testing you can use the build system:
 
 - `npm run server` for the dev server and light build.
 - `npm run build` for the full build with caching.
