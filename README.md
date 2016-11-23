@@ -1,4 +1,4 @@
-# List of Progressive Web Apps [![Build status](https://travis-ci.org/operasoftware/pwa.rocks.svg)](https://travis-ci.org/operasoftware/pwa.rocks)
+# List of Progressive Web Apps [![Build status](https://travis-ci.org/pwarocks/pwa.rocks.svg)](https://travis-ci.org/pwarocks/pwa.rocks)
 
 What is a progressive web app? See the “[Progressive Web Apps](https://developer.chrome.com/devsummit/sessions/progressiveapps)” talk by [Alex Russell](https://github.com/slightlyoff) and [Andreas Bovens](https://github.com/andreasbovens).
 
@@ -46,7 +46,7 @@ This combination of features will trigger the web app install banner in [Opera](
 - Fork this repository.
 - Create a branch, name it after the feature you’re implementing.
 - Clone it locally and start making changes.
-- Test it locally by opening the [src/index.html](src/index.html) file in your browser.
+- Test it locally by opening the [`src/index.html`](src/index.html) file in your browser.
 - Commit all changes to your feature branch and create a pull request.
 
 For full-scaled development and testing you can use the build system:
