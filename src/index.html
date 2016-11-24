@@ -987,7 +987,20 @@
 			<style>
 				[data-app='NASA-Code'] {
 					color: rgb(15, 18, 51);
-					background: currentColor url(apps/nasa-144.png) 50% 50% / 70% auto no-repeat;
+					background-image: linear-gradient(-135deg, #58595B 1px, #58595B 40px, #FFF685 41px, #FFF685 80px, #58595B 81px, #58595B 120px, #FFF685 121px);
+					background-size: 114px 114px;
+					box-sizing: border-box;
+					}
+			    [data-app='NASA-Code']:after {
+					box-sizing: border-box;
+					display: block;
+					position: absolute;
+					left: 5px;
+					right: 5px;
+					top: 5px;
+					bottom: 5px;
+					content: '';
+					background: currentColor url(apps/nasa_logo.svg) 50% 50% / 70% auto no-repeat;
 					}
 			</style>
 		</a>
